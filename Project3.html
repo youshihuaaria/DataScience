@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- Created on Sep 14, 2010 4:03:11 PM -->
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script type="text/javascript" language="JavaScript">
+
+/**************************************************************************
+ *   Copyright (C) 2012, Paul Lutus                                        *
+ *                                                                         *
+ *   This program is free software; you can redistribute it and/or modify  *
+ *   it under the terms of the GNU General Public License as published by  *
+ *   the Free Software Foundation; either version 2 of the License, or     *
+ *   (at your option) any later version.                                   *
+ *                                                                         *
+ *   This program is distributed in the hope that it will be useful,       *
+ *   but WITHOUT ANY WARRANTY; without even the implied warranty of        *
+ *   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the         *
+ *   GNU General Public License for more details.                          *
+ *                                                                         *
+ *   You should have received a copy of the GNU General Public License     *
+ *   along with this program; if not, write to the                         *
+ *   Free Software Foundation, Inc.,                                       *
+ *   59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.             *
+ ***************************************************************************/
+
+    </script>
+    
+    
+    <title>
+      Interactive LaTeX Editor
+    </title>
+    <meta name="viewport" content="width=device-width"/>
+    <link rel="shortcut icon" href="../arachnophilia/arach.gif" type="image/x-icon"/>
+    <link rev="made" href="http://www.arachnoid.com"/>
+    <meta http-equiv="Content-language" content="en"/>
+    <meta name="author" content="Paul Lutus"/>
+    <meta name="owner" content="Paul Lutus"/>
+    <meta name="description" content="An easy-to-use LaTeX editor/renderer."/>
+    <meta name="keywords" content="math mathematics TeX LaTeX equations typesetting formulas graphics rendering"/>
+    <meta name="group" content="ARACH/MATH"/>
+    <meta name="menuCat" content="Mathematics"/>
+    <meta name="menuCat" content="JavaScript"/>
+    <meta name="GENERATOR" content="Arachnophilia 5.4"/>
+    <meta name="FORMATTER" content="Arachnophilia 5.4"/>
+    <script type="text/javascript" src="../MathJax/MathJax.js?config=/javascript/mathjax_local_tweaks.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="../styles/default_article.css"/>
+    <link rel="stylesheet" type="text/css" href="../styles/roundcorner_16_parch.css"/>
+    <link rel="stylesheet" type="text/css" href="resources/latex.css"/>
+    
+  </head>
+  
+  <body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#ff0000">
+    <!-- SiteIndexBegin -->
+    <!-- Menus created by SiteGen, http://www.arachnoid.com/SiteGen -->
+    <table><tr><td><a href="../index.html">Home</a>&nbsp;|&nbsp;</td><td><a href="../consumer_loan_calculator/index.html">Mathematics</a>&nbsp;|&nbsp;</td><td>
+          <script type="text/javascript" language="JavaScript">
+            function toNewPage(t) { location.href = t.options[t.selectedIndex].value; }
+          </script>
+          <select onchange="toNewPage(this)" title="Open this list to choose a page">
+            <option value="../consumer_loan_calculator/index.html">* Consumer Loan Calculator</option>
+            <option value="../tank_slope_bottom/index.html">* Applied Mathematics</option>
+            <option value="../calculus/index.html">* Calculus</option>
+            <option value="../finance/index.html">* Finance Calculator</option>
+            <option value="../is_math_a_science/index.html">* Is Mathematics a Science?</option>
+            <option value="../maxima/index.html">* Maxima</option>
+            <option value="../sage/index.html">* Sage</option>
+            <option value="../TrigonometricRelations/index.html">* Trigonometric Relations</option>
+            <option value="../lutusp/conversions.html">* Unit Conversions</option>
+            <option value="../area_irregular_polygon/index.html">Area of an Irregular Polygon</option>
+            <option value="../binomial_probability/index.html">Binomial Probability</option>
+            <option value="../coronavirus_equation/index.html">Coronavirus Math</option>
+            <option value="../equities_myths/index.html">Equities Myths</option>
+            <option value="../graphinity_online/index.html">Graphinity</option>
+            <option value="../graphitude/index.html">Graphitude</option>
+            <option value="index.html" selected="selected">Interactive LaTeX Editor</option>
+            <option value="../NormalDistribution/index.html">Introduction to Statistics</option>
+            <option value="../mandelbrot_set/index.html">Mandelbrot Set</option>
+            <option value="../peak_people/index.html">Peak People</option>
+            <option value="../polygon_calculator/index.html">Polygon Calculator</option>
+            <option value="../polysolve/index.html">Polynomial Regression Data Fit</option>
+            <option value="../polysolve/java_version.html">Polynomial Regression Data Fit (Java version)</option>
+            <option value="../prime_numbers/index.html">Prime Numbers</option>
+            <option value="../quadsolver/index.html">Quadratic Equation Solver</option>
+            <option value="../randomness/index.html">Randomness</option>
+            <option value="../signal_processing/index.html">Signal Processing</option>
+            <option value="../lutusp/pi.html">The Mathematics of Pi</option>
+            <option value="../lutusp/populati.html">The Mathematics of Population Increase</option>
+            <option value="../braking_physics/index.html">The Physics Behind Stopping a Car</option>
+            <option value="why_latex_pdf.html">Why PDF?</option>
+          </select>
+    </td><td><a href="../graphitude/index.html"><img src="../images/leftarrow.png" border="0" alt="" title="Click for prior page"/></a></td><td><a href="../NormalDistribution/index.html"><img src="../images/rightarrow.png" border="0" alt="" title="Click for next page"/></a></td><td>&nbsp;<a href="../administration/submit.php" title="Recommend this page to friends"><img src="../images/addthis16.gif" style="border:0px;" alt=""/>&nbsp;&nbsp;Share This Page</a></td></tr></table>
+    <!-- SiteIndexEnd -->
+    <div align="center"><h2>Interactive LaTeX Editor</h2></div>
+    
+    <div align="center">
+      <p>This page Copyright &copy; 2012, <a href="../administration/index.html">P. Lutus</a> &mdash; <a href="../messages/index.php">comments and suggestions</a></p>
+      <p>Version 4.0, 09/28/2012</p>
+      
+    </div>
+    
+    <div class="article_wrapper">
+      <div class="roundcorner_16_parch_content">
+        
+        <b>This is an online, interactive LaTeX editor.</b> The visitor's LaTeX, entered or copied into the editing window below, will be quickly rendered by up to three renderers (in different ways). To learn how this works, I suggest choosing an example from the the "LaTeX Examples" drop-down list at the lower left.
+        
+        
+        
+        <p><b> Latex Editing Window:</b></p>
+        
+        <div class="controlbox">
+          <table width="100%"><tr>
+              
+              <td style="text-align:left">
+                <input type="button" id="undobutton" value="&lt;- Undo" title= "Undo the most recent editing action"/>
+                <input type="button" id="redobutton" value="Redo -&gt;" title= "Redo a previously undone action"/>
+              </td>
+              
+              <td style="text-align:right">
+                <select id="mathsymbols" title="General LaTeX symbols">
+                  <option title= "">Symbols</option>
+                  <option title= "\sqrt{x}">√</option>
+                  <option title= "\sqrt[n]{x}">∛</option>
+                  <option title= "x^n">x²</option>
+                  <option title= "x_n">x₂</option>
+                  <option title= "x_a^b">x₂²</option>
+                  <option title= "\frac{a}{b}">÷</option>
+                  <option title= "\lim_{x \to 0}">limit</option>
+                  <option title= "\sum_{a}^{b}">∑</option>
+                  <option title= "\int_{a}^{b}">∫</option>
+                  <option title= "\oint_{a}^{b}">∮</option>
+                  <option title= "\prod_{a}^{b}">∏</option>
+                  <option title= "\binom{n}{k}">binom</option>
+                  <option title= "\left( \right)">( )</option>
+                  <option title= "\left[ \right]">[ ]</option>
+                  <option title= "\lceil x \rceil">⌈ x ⌉</option>
+                  <option title= "\lfloor x \rfloor">⌊ x ⌋</option>
+                  <option title= "\left\{ \right\}">{ }</option>
+                  <option title= "\bigcup_{\alpha\in S}">⋃</option>
+                  <option title= "\bigcap_{\alpha\in S}">⋂</option>
+                  <option title= "\partial">∂</option>
+                  <option title= "\infty">∞</option>
+                  <option title= "\therefore">∴</option>
+                  <option title= "\displaystyle">displaystyle</option>
+                  <option title= "\textstyle">textstyle</option>
+                  <option title= "\scriptstyle">scriptstyle</option>
+                  <option title= "\text{}">text</option>
+                  <option title= "\textbf{}">bold</option>
+                  <option title= "\textit{}">ital</option>
+                  <option title= "\textrm{}">roman</option>
+                  <option title= "{\color{red} }">R</option>
+                  <option title= "{\color{green} }">G</option>
+                  <option title= "{\color{blue} }">B</option>
+                </select>
+                
+                <select id="greeksymbols" title="Greek characters">
+                  <option title="">Greek</option>
+                  <optgroup label= "Lowercase">
+                    <option title= "\alpha">ɑ</option>
+                    <option title= "\beta">β</option>
+                    <option title= "\gamma">ɣ</option>
+                    <option title= "\delta">δ</option>
+                    <option title= "\epsilon">ϵ</option>
+                    <option title= "\varepsilon">ε</option>
+                    <option title= "\zeta">ζ</option>
+                    <option title= "\eta">η</option>
+                    <option title= "\theta">θ</option>
+                    <option title= "\vartheta">ϑ</option>
+                    <option title= "\iota">ι</option>
+                    <option title= "\kappa">κ</option>
+                    <option title= "\lambda">λ</option>
+                    <option title= "\mu">μ</option>
+                    <option title= "\nu">ν</option>
+                    <option title= "\xi">ξ</option>
+                    <option title= "\pi">π</option>
+                    <option title= "\varpi">ϖ</option>
+                    <option title= "\rho">ρ</option>
+                    <option title= "\varrho">ϱ</option>
+                    <option title= "\sigma">σ</option>
+                    <option title= "\varsigma">ς</option>
+                    <option title= "\tau">τ</option>
+                                                      <option title= "\upsilon">υ</option>
+                    <option title= "\phi">ϕ</option>
+                    <option title= "\varphi">φ</option>
+                    <option title= "\chi">χ</option>
+                    <option title= "\psi">ψ</option>
+                    <option title="\omega">ω</option>
+                  </optgroup>
+                  <optgroup label="Uppercase">
+                    <option title= "\Gamma">Ɣ</option>
+                    <option title= "\Delta">Δ</option>
+                    <option title= "\Theta">Θ</option>
+                    <option title= "\Lambda">Λ</option>
+                    <option title= "\Xi">Ξ</option>
+                    <option title= "\Pi">Π</option>
+                    <option title= "\Sigma">Σ</option>
+                    <option title= "\Upsilon">Υ</option>
+                    <option title= "\Psi">Ψ</option>
+                    <option title= "\Omega">Ω</option>
+                  </optgroup>
+                </select>
+              </td>
+              <td style="text-align:right">
+                <span title="Choose the number of editing window rows">
+                  Editing window rows:
+                  <input type="radio" name="editrb" class="editradio" value="4"/> 4
+                  <input type="radio" name="editrb" class="editradio" value="8"/> 8
+                  <input type="radio" name="editrb" class="editradio" value="16"/> 16
+                  <input type="radio" name="editrb" class="editradio" value="32"/> 32
+                  <input type="radio" name="editrb" class="editradio" value="64"/> 64
+                </span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        
+        
+        <div class="editfield">
+          <textarea id="mytextarea" title="Enter or paste LaTeX content here" rows="4" class="inputfield" type="text" spellcheck="false" name="query"></textarea>
+        </div>
+        <div class="controlbox">
+          <table width="100%">
+            <tr>
+              <td>
+                <select id="examplelist" title="Choose a LaTeX syntax example from this list">
+                  <option>LaTeX Examples</option>
+                  <option>Quadratic equation</option>
+                  <option>Solution to classic cubic equation (CodeCogs and Google won't render)</option>
+                  <option>Taylor series for sin(x)</option>
+                  <option>Blackbody equation, power per wavelength</option>
+                  <option>Blackbody equation, radiative intensity per frequency and temperature</option>
+                  <option>Hawking Radiation Equation</option>
+                  <option>Heisenberg's Uncertainty Relation</option>
+                  <option>Probability distribution function (PDF)</option>
+                  <option>Cumulative Distribution Function (CDF)</option>
+                  <option>Standard Deviation equation</option>
+                  <option>Ackermann Function</option>
+                  <option>Schrödinger Wave Equation</option>
+                  <option>Dirac Equation</option>
+                  <option>Properties of e</option>
+                  <option>Limit Definition of a derivative</option>
+                  <option>Special Relativity spacetime coordinate transformation</option>
+                  <option>Series definition for a square wave</option>
+                  <option>Fourth-order polynomial regression matrix</option>
+                  <option>Einstein equation with cosmological constant (1915)</option>
+                </select>
+              </td>
+              <td style="text-align:right">
+                <input type="button" id="render" value="Render it now" title="This button is for people who can't wait three seconds"/>
+                <input type="button" id="make_url" value="Make an URL" title="Construct an URL for this page with the current equation attached"/>
+                <input type="button" id="unicode_search" value="Unicode Search" title="Open a new window/tab for Unicode character searches"/>
+              </td>
+              
+            </tr>
+          </table>
+        </div>
+        
+        <p><table width="100%"><tr><td><div id="heading"></div></td>
+              <td style="text-align:right">
+                <span title="Choose how equations will be rendered">
+                  Render Mode:
+                  <input type="radio" name="dispb" class="choosedb" value="1" /> <a href="http://www.codecogs.com/latex/eqneditor.php">CodeCogs</a>&nbsp;&nbsp;
+                  <input type="radio" name="dispb" class="choosedb" value="2" checked="checked"/> <a href="http://www.mathjax.org/">MathJax</a>&nbsp;&nbsp;
+                  <input type="radio" name="dispb" class="choosedb" value="4" /> <a href="http://code.google.com/apis/chart/">Google Chart</a>&nbsp;&nbsp;
+                  <input type="radio" name="dispb" class="choosedb" value="7" /> All
+                </span>
+        </td></tr></table></p>
+        <p></p>
+        
+        
+        
+        <div id="ccgdsp"><b>Codecogs</b><br/><div class="coldisp" title="CodeCogs rendering window"><img id="ccgimage" src=""/></div></div>
+        
+        <div id="mjdsp"><b>MathJax</b><br/><div class="coldisp" id="mjinner" title="MathJax rendering window"></div></div>
+        
+        <div id="googdsp"><b>Google Chart API</b> (won't render long equations)<br/><div class="coldisp" title="Google Chart rendering window"><img id="googimage" src=""/></div></div>
+        
+        <p><b>Quick Introduction:</b></p>
+        
+        <ul>
+          
+          <li>The goals of this project include a simple, intuitive LaTeX editor with near-real-time rendering updates, Web access, and the ability to save the user's work between visits. And yes &mdash; you can leave this page and come back, and your last edit will still be on display.</li>
+          
+          <li>To see examples of LaTeX syntax, choose some samples from the drop-down list below the editing window.</li>
+          <li>If you create a useful LaTeX rendering and want to share it with others, copy the content of the editing window &mdash; select some text, then type Ctrl+C (Copy) or use menu item Edit ... Copy (more on this below).</li>
+          
+          <li>If instead you want a graphic image of the result and if you are using the CodeCogs renderer, just right-click the rendered equation and choose "Save As ...".</li>
+          
+          <li>If you accidentally erase some of your typing or just want to return to an earlier version, press the "Undo" button above the editing window.</li>
+          
+          <li>If you want to create an URL that calls this page with an included equation, press the "Make an URL" button, then copy the result by typing Ctrl+C (Copy). (<a href="?equ=S_N = \displaystyle\sqrt{ \frac{1}{N} \sum^N_{i=1}{(x_i - \bar{x})^2} }">click here</a> for an example that calls this page with an equation URL.)</li>
+          
+        </ul>
+        
+        <p><b>More detail:</b></p>
+        
+        <ul>
+          <li><p>If you visit a site that has LaTeX in text form, you can <b>copy it here</b> and render it. Like this:</p>
+            <ul>
+              <li>Visit a site that has LaTeX content.</li>
+              <li>Drag your mouse over the LaTeX expression.</li>
+              <li>Press Ctrl+C (Copy) or use the menu item Edit ... Copy.</li>
+              <li>Move to this page.</li>
+              <li>Click your mouse in the green editing field above.</li>
+              <li>Press Ctrl+V (Paste) or use the menu item Edit ... Paste.</li>
+              <li>Press Ctrl+Enter or Shift+Enter while focused in the green editing field. This will render the LaTeX expression.</li>
+            </ul>
+          </li>
+          <li><p>If you want to use your edited expression elsewhere, you can <b>copy it from here</b>. Like this:</p>
+            
+            <ul>
+              <li>Click your mouse inside the green editing window.</li>
+              <li>Press Ctrl+A (select All) to or Edit ... Select All to select the expression.</li>
+              <li>Press Ctrl+C (Copy) or Edit ... Copy to copy the expression.</li>
+              <li>Move to the destination Web page or document.</li>
+              <li>Press Ctrl+V (Paste) or use Edit ... Paste to paste the expression.</li>
+            </ul>
+          </li>
+          
+          <li><p>For best results, enable JavaScript and cookies for this Web page. JavaScript allows this page to work as intended, and your work is saved in a cookie between visits &mdash; with cookies enabled, you can simply leave this page and when you return, your most recent work will be on display.</p></li>
+          
+          <li><p>This page allows the user a choice between three rendering methods &mdash; CodeCogs, MathJax and Google Chart API. Each of these methods has advantages and drawbacks:</p></li>
+          
+          <ul>
+            <li><p><b>CodeCogs</b>
+                <ul>
+                  <li>This renderer provides a graphic image, so it is free of some of the artifacts that plague character-based renderers like MathJax.</li>
+                  <li>This renderer responds to some special, non-LaTeX extensions like "\300dpi", in advance of normal LaTeX, to produce a much bigger rendering.</li>
+                  <li>To save this render as a graphic image, right-click the image and choose "Save As ...".</li>
+                  <li>Graphics renders create prettier and more accurate TeX renderings overall, but only at one scale (zooming in on a graphic image usually spoils its appearance).</li>
+                  <li>For very large LaTeX expressions, this renderer will print an error message instead of rendering.</li>
+              </ul></p>
+              
+              
+            </li>
+            <li><p><b>MathJax</b>
+                <ul>
+                  <li>This rendererer is often faster because it renders using scalable fonts rather than graphics.</li>
+                  <li>For some reason, using the same fonts, MathJax renderings look much better on Google Chrome than either Firefox or Microsoft Explorer.</li>
+                  <li>The MathJax renderer works more efficiently if there are suitable local fonts (but it will work without them by using Web-based fonts). <a href="http://www.mathjax.org/help/fonts/">The font issue is explained here</a>.</li>
+              </ul></p>
+              
+              
+            </li>
+            <li><p><b>Google Chart API</b>
+                <ul>
+                  <li>This renderer works much like CodeCogs, except that it has a smaller equation size limit of only 200 characters in the URL, which translates to about 1/3 this size in LaTeX.</li>
+                  <li>As with the CodeCogs renderer, to save a render as a graphic image, right-click the image and choose "Save As ...".</li>
+            </ul></p></li>
+            <p></p>
+            
+            
+            
+            <li>Each of these renderers has things it doesn't know about. Don't assume an error message from one of these renderers means your TeX syntax is wrong.</li>
+            <li>Remember about these renderers that they only provide previews, and their rendering quality cannot compare with actual TeX typesetting.</li>
+            <li>This page updates its LaTeX renders automatically at three-second intervals (for the MathJax display alone, 1/2 second).</li>
+          </ul>&nbsp;
+          
+          <li>The Codecogs renderer home page: <a href="http://www.codecogs.com/latex/eqneditor.php">http://www.codecogs.com/latex/eqneditor.php</a>.</li>
+          <li>The MathJax renderer home page: <a href="http://www.mathjax.org/">http://www.mathjax.org/</a>.</li>
+          <li>The Google Chart API home page: <a href="http://code.google.com/apis/chart/">http://code.google.com/apis/chart/</a>.</li>
+        </ul>
+        <ul>
+          <li><p>I have gotten a number of requests for various additional LaTeX packages that aren't supported by this page, so I need to explain something. This page doesn't generate LaTeX renderings, it only accepts plain-text entries and submits them to the supported renderers. I don't have any control over the packages supported by these renderers. To move beyond the limited capabilities of this page, I recommend that people download and try <a href="http://www.xm1math.net/texmaker/">Texmaker</a>, which I find to be a first-rate TeX/LaTeX editor (free, open source). For more than LaTeX rendering, for actual math as well as nice equation rendering, I recommend the free, open-source <a href="http://www.sagemath.org/">Sage</a> mathematical toolset (my <a href="../sage/index.html">Sage tutorial</a>).</p></li>
+          
+          <li><p>One final note. After much testing and evaluation, I can only recommend that people <i>get rid of Microsoft's browser</i>. Of the many browsers now available, it is the least stable and reliable. I have found that if I paste a large equation into the editing window, typical browsers like Firefox and Chrome simply render the LaTeX and wait for more input. But Microsoft Explorer often freezes up and then crashes.</p></li>
+          
+        </ul>
+        
+        <p><b>LaTeX Resources:</b></p>
+        
+        <ul>
+          <li><a href="http://www.maths.tcd.ie/~dwilkins/LaTeXPrimer/">Getting Started with LaTeX</a></li>
+          <li><a href="http://www.pages.drexel.edu/~pyo22/students/latexRelated/latexTutorial.html">LaTeX Tutorial</a></li>
+          <li><a href="http://www.cs.cornell.edu/Info/Misc/LaTeX-Tutorial/LaTeX-Home.html">Beginning LaTeX</a></li>
+          <li><a href="https://www.math.brown.edu/~jhs/ReferenceCards/TeXRefCard.v1.5.pdf">TeX Reference Card</a></li>
+        </ul>
+        
+        <script type="text/javascript" src="resources/comp_latex.js"></script>
+        
+      </div>
+    </div><p></p>
+    <!-- SiteIndexBegin -->
+    <!-- Menus created by SiteGen, http://www.arachnoid.com/SiteGen -->
+    <table><tr><td><a href="../index.html">Home</a>&nbsp;|&nbsp;</td><td><a href="../consumer_loan_calculator/index.html">Mathematics</a>&nbsp;|&nbsp;</td><td>
+          <select onchange="toNewPage(this)" title="Open this list to choose a page">
+            <option value="../consumer_loan_calculator/index.html">* Consumer Loan Calculator</option>
+            <option value="../tank_slope_bottom/index.html">* Applied Mathematics</option>
+            <option value="../calculus/index.html">* Calculus</option>
+            <option value="../finance/index.html">* Finance Calculator</option>
+            <option value="../is_math_a_science/index.html">* Is Mathematics a Science?</option>
+            <option value="../maxima/index.html">* Maxima</option>
+            <option value="../sage/index.html">* Sage</option>
+            <option value="../TrigonometricRelations/index.html">* Trigonometric Relations</option>
+            <option value="../lutusp/conversions.html">* Unit Conversions</option>
+            <option value="../area_irregular_polygon/index.html">Area of an Irregular Polygon</option>
+            <option value="../binomial_probability/index.html">Binomial Probability</option>
+            <option value="../coronavirus_equation/index.html">Coronavirus Math</option>
+            <option value="../equities_myths/index.html">Equities Myths</option>
+            <option value="../graphinity_online/index.html">Graphinity</option>
+            <option value="../graphitude/index.html">Graphitude</option>
+            <option value="index.html" selected="selected">Interactive LaTeX Editor</option>
+            <option value="../NormalDistribution/index.html">Introduction to Statistics</option>
+            <option value="../mandelbrot_set/index.html">Mandelbrot Set</option>
+            <option value="../peak_people/index.html">Peak People</option>
+            <option value="../polygon_calculator/index.html">Polygon Calculator</option>
+            <option value="../polysolve/index.html">Polynomial Regression Data Fit</option>
+            <option value="../polysolve/java_version.html">Polynomial Regression Data Fit (Java version)</option>
+            <option value="../prime_numbers/index.html">Prime Numbers</option>
+            <option value="../quadsolver/index.html">Quadratic Equation Solver</option>
+            <option value="../randomness/index.html">Randomness</option>
+            <option value="../signal_processing/index.html">Signal Processing</option>
+            <option value="../lutusp/pi.html">The Mathematics of Pi</option>
+            <option value="../lutusp/populati.html">The Mathematics of Population Increase</option>
+            <option value="../braking_physics/index.html">The Physics Behind Stopping a Car</option>
+            <option value="why_latex_pdf.html">Why PDF?</option>
+          </select>
+    </td><td><a href="../graphitude/index.html"><img src="../images/leftarrow.png" border="0" alt="" title="Click for prior page"/></a></td><td><a href="../NormalDistribution/index.html"><img src="../images/rightarrow.png" border="0" alt="" title="Click for next page"/></a></td><td>&nbsp;<a href="../administration/submit.php" title="Recommend this page to friends"><img src="../images/addthis16.gif" style="border:0px;" alt=""/>&nbsp;&nbsp;Share This Page</a></td></tr></table>
+    <!-- SiteIndexEnd -->
+  </body>
+</html>
